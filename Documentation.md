@@ -73,3 +73,7 @@ Projeto relativamente simples, apenas duas funcionalidades para automatizar. Foi
 18 horas / 1 pessoa / 6 horas produtivas = 3 dias e meio
 
 Basicamente temos 1 semana para criar o plano de teste e iniciar a automação da aplicação.
+
+## Pipeline CI/CD
+
+Para acessar a pipeline do Github Actions basta clicar [aqui](./.github/workflows/main.yml).
