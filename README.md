@@ -13,12 +13,12 @@ Para configurar o ambiente e rodar os testes automatizados, siga os passos abaix
 1. Clone o repositório:
 
    ```bash
-   git clone
+   git clone https://github.com/mateusoliveiraps/bugbank.git
    ```
 
 2. Acesse o diretório do projeto:
    ```bash
-    cd 
+    cd bugbank
    ```
 3. Instale as dependências:
     ```bash
