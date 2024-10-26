@@ -47,32 +47,33 @@ Qase.io = https://app.qase.io/
 usuário: mateus.oliveira@unoesc.edu.br
 senha: Mateusadal1997*
 
+Acessar a página e clicar no projeto BugBank, assim já vai direcionar para os casos de testes criados.
+### Dicas
+Ao clicar em qualquer caso de teste, pode validar o passo a passo criado e todas as identificações deste caso de teste.
+Ao acessar a página Tests Runs, irá encontrar os testes executados.
+
 ## Tempo de teste
 
-Para calcular tempo dos testes utilizei a seguinte fórmulas:
+| Casos de Testes | Estimativa de horas | Reteste |
+| --- | --- | --- |
+| CT01 - Verifica se o usuário consegue se cadastrar na plataforma   | 3h | 1h |
+| CT02 - Cadastrar um usuário sem informar nenhum campo | 1h | 1h |
+| CT03 - Realizar uma transferência para uma conta existente | 8h | 2h |
+| CT04 - Realizar uma transferência sem informar nenhum campo | 1h | 1h |
+| Horas totais | 13h | 5h |
 
-- (ME) - Media de execução dos 4 casos de testes.
-- (MP) - Media do tempo de preparação do ambiente.
-- (MC) - Margem de contigencia de 10%
-- (TT) - Tempo de teste TT = ME + MT + MC
+Horas do dia = 8h
 
-Cálculos
-```bash
-# Foi utilizado os tempo de execução do pipeline
+Horas produtivas = 6h
 
-# Tempo de execução dos testes nos ultimos 3 pipelines
-ME = (1,45m + 1,24m + 1,18m) / 3;
-ME = 1,79m
+Pessoas nos testes = 1
 
-# Tempo de execução de instalação das dependencias nos ultimos 3 pipelines
-MP = (0,69m + 0,29m + 0,28m) / 3;
-MP = 0,42m
+Projeto relativamente simples, apenas duas funcionalidades para automatizar. Foi passado 18 horas para finalizar o mesmo, com isso iremos dividir o tempo da seguinte forma.
 
-# MC = (ME + MP) * 0,10
-MC = (1,79m + 0,42m) ∗ 0,10 = 0,221 minutos
+18 horas / 1 pessoa / 6 horas produtivas = 3 dias e meio
 
-#TT = ME + MT + MC
-TT = 1,79m + 0,42m + 0,221m
+Basicamente temos 1 semana para criar o plano de teste e iniciar a automação da aplicação.
 
-TT = 2 minutos e 43 segundos.
-```
+## Pipeline CI/CD
+
+Para acessar a pipeline do Github Actions basta clicar [aqui](./.github/workflows/main.yml).
