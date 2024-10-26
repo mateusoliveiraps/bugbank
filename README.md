@@ -26,6 +26,7 @@ Para configurar o ambiente e rodar os testes automatizados, siga os passos abaix
     ```
 
 ## Testes Automatizados
+A documentação completa dos testes pode ser encontrada [aqui](./Documentation.md).
 
 ## Execução de Testes
 Para rodar os testes automatizados, use o seguinte comando:
